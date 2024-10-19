@@ -245,7 +245,7 @@ h6 {
   right: 15px;
   font-family: FontAwesome;
   font-style: normal;
-  font-weight: normal;
+  font-weight: normal;  
 }
 
 .sf-arrows ul .sf-with-ul:after {
@@ -513,7 +513,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-family: "Raleway", sans-serif;
   font-size: 56px;
   font-weight: 600;
-  text-transform: uppercase;
 }
 
 #intro h1 span {
