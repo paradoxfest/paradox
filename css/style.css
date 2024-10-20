@@ -14,6 +14,14 @@ body {
   color: #2f3138;
   font-family: "Open Sans", sans-serif;
 }
+ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  
+}
 
 a {
   color: #f82249;
