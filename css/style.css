@@ -13,6 +13,12 @@ body {
   background: #fff;
   color: #2f3138;
   font-family: "Open Sans", sans-serif;
+
+}
+li{
+  margin: 10px 10px;
+  padding:10;
+  1
 }
 ul {
   list-style-type: none;
