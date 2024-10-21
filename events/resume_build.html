@@ -13,7 +13,8 @@
   <link href="../img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+    rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
   <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -50,7 +51,7 @@
           <li><a href="../index.html#speakers">Events</a></li>
           <li><a href="../index.html#schedule">Schedule</a></li>
           <li><a href="../index.html#venue">Venue</a></li>
-      
+
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -106,11 +107,62 @@
                 </p><br>
             </div>
             <div>
-              <a href="https://forms.gle/7KqK5zkpgLE16G2Q7"><button type="button" class="btn btn-primary btn-lg">Register Now</button></a>
-              
+              <a href="https://forms.gle/7KqK5zkpgLE16G2Q7"><button type="button"
+                  class="btn btn-primary btn-lg">Register Now</button></a>
+              <button id="openModalBtn" class="btn btn-primary btn-lg">Guidelines</button>
+
+              <!-- The Modal -->
+              <div id="competitionModal"
+                style="display:none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);">
+                <div
+                  style="background-color: #fff; margin: 15% auto; padding: 20px; border: 1px solid #888; width: 80%; max-width: 500px;">
+                  <span id="closeModalBtn"
+                    style="color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer;">&times;</span>
+                  <h2>Competition Guidelines</h2>
+                  <ul>
+                    <li>The scenario (job posting or description) will be revealed at the start of the competition.</li>
+                    <li>Individual participation only (no team entries).</li>
+                    <li>Participants must create a résumé tailored to the job description.</li>
+                    <li>Participants have 45 minutes to craft and submit their résumés after the scenario is revealed.
+                    </li>
+                    <li>All résumés must be submitted through the designated online platform or email within the time
+                      limit.</li>
+                    <li>Résumés submitted after the deadline will be automatically disqualified.</li>
+                    <li>The judges' decision will be final.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <script>
+                // Get modal element
+                var modal = document.getElementById("competitionModal");
+
+                // Get open modal button
+                var openModalBtn = document.getElementById("openModalBtn");
+
+                // Get close button
+                var closeModalBtn = document.getElementById("closeModalBtn");
+
+                // Open modal event
+                openModalBtn.onclick = function () {
+                  modal.style.display = "block";
+                }
+
+                // Close modal event
+                closeModalBtn.onclick = function () {
+                  modal.style.display = "none";
+                }
+
+                // Close modal if clicked outside
+                window.onclick = function (event) {
+                  if (event.target == modal) {
+                    modal.style.display = "none";
+                  }
+                }
+              </script>
             </div>
           </div>
-          
+
         </div>
       </div>
 
@@ -123,7 +175,7 @@
     Footer
   ============================-->
   <footer id="footer">
-    
+
 
     <div class="container">
       <div class="copyright">
@@ -131,21 +183,21 @@
       </div>
       <div class="credits">
 
-  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+        <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 
- <!-- JavaScript Libraries -->
- <script src="../lib/jquery/jquery.min.js"></script>
- <script src="../lib/jquery/jquery-migrate.min.js"></script>
- <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
- <script src="../lib/easing/easing.min.js"></script>
- <script src="../lib/superfish/hoverIntent.js"></script>
- <script src="../lib/superfish/superfish.min.js"></script>
- <script src="../lib/wow/wow.min.js"></script>
- <script src="../lib/venobox/venobox.min.js"></script>
- <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+        <!-- JavaScript Libraries -->
+        <script src="../lib/jquery/jquery.min.js"></script>
+        <script src="../lib/jquery/jquery-migrate.min.js"></script>
+        <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="../lib/easing/easing.min.js"></script>
+        <script src="../lib/superfish/hoverIntent.js"></script>
+        <script src="../lib/superfish/superfish.min.js"></script>
+        <script src="../lib/wow/wow.min.js"></script>
+        <script src="../lib/venobox/venobox.min.js"></script>
+        <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
 
- <!-- Template Main Javascript File -->
- <script src="../js/main.js"></script>
+        <!-- Template Main Javascript File -->
+        <script src="../js/main.js"></script>
 
 </body>
 
