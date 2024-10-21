@@ -13,7 +13,8 @@
   <link href="../img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+    rel="stylesheet">
 
   <!-- Bootstrap CSS File -->
   <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -50,7 +51,7 @@
           <li><a href="../index.html#speakers">Events</a></li>
           <li><a href="../index.html#schedule">Schedule</a></li>
           <li><a href="../index.html#venue">Venue</a></li>
-      
+
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -84,22 +85,77 @@
                 <a href=""><i class="fa fa-linkedin"></i></a>
               </div> -->
               <h3>Guidelines</h3>
-    <ul type="">
-        <li><strong>1.</strong> Open to all students with basic C knowledge; individual participation.</li>
-        <li><strong>2.</strong> Debug one assigned C program (easy, medium, or hard); questions will vary.</li>
-        <li><strong>3.</strong> Only debugging allowed; no structural changes or new features.</li>
-        <li><strong>4.</strong> Scoring is based on correctness, efficiency, and time taken.</li>
-        <li><strong>5.</strong> Submit the debugged code in a single file with a brief explanation.</li>
-        <li><strong>6.</strong> No external resources (internet, books, compilers) allowed; work independently.</li>
-        <li><strong>7.</strong> Plagiarism leads to disqualification.</li>
-    </ul><br>
+              <ul type="">
+                <li><strong>1.</strong> Open to all students with basic C knowledge; individual participation.</li>
+                <li><strong>2.</strong> Debug one assigned C program (easy, medium, or hard); questions will vary.</li>
+                <li><strong>3.</strong> Only debugging allowed; no structural changes or new features.</li>
+                <li><strong>4.</strong> Scoring is based on correctness, efficiency, and time taken.</li>
+                <li><strong>5.</strong> Submit the debugged code in a single file with a brief explanation.</li>
+                <li><strong>6.</strong> No external resources (internet, books, compilers) allowed; work independently.
+                </li>
+                <li><strong>7.</strong> Plagiarism leads to disqualification.</li>
+              </ul><br>
             </div>
             <div>
-              <a href="https://forms.gle/YopkPSMS3auYfLas8"><button type="button" class="btn btn-primary btn-lg">Register Now</button></a>
-              
+              <a href="https://forms.gle/YopkPSMS3auYfLas8"><button type="button"
+                  class="btn btn-primary btn-lg">Register Now</button></a>
+              <button id="openModalBtn" class="btn btn-primary btn-lg">Guildelines</button>
+
+              <!-- The Modal -->
+              <div id="promptModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h2>Competition Guidelines</h2>
+                  <ul>
+                    <li>Duration: 30 minutes</li>
+                    <li>Task: Create effective prompts that maximize desired responses within specific constraints.</li>
+                    <li>Tools: Use only approved software.</li>
+                    <li>Evaluation Criteria:
+                      <ul>
+                        <li>Effectiveness</li>
+                        <li>Creativity</li>
+                        <li>Clarity</li>
+                      </ul>
+                    </li>
+                    <li>Participants: Maximum of 25</li>
+                    <li>Scoring: Based on performance, creativity, and adherence.</li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <script>
+                // Get modal element
+                var modal = document.getElementById("promptModal");
+
+                // Get open modal button
+                var openModalBtn = document.getElementById("openModalBtn");
+
+                // Get close button
+                var closeModalBtn = document.getElementsByClassName("close")[0];
+
+                // Open modal event
+                openModalBtn.onclick = function () {
+                  modal.style.display = "block";
+                }
+
+                // Close modal event
+                closeModalBtn.onclick = function () {
+                  modal.style.display = "none";
+                }
+
+                // Close modal if clicked outside
+                window.onclick = function (event) {
+                  if (event.target == modal) {
+                    modal.style.display = "none";
+                  }
+                }
+              </script>
             </div>
           </div>
-          
+
         </div>
       </div>
 
@@ -112,7 +168,7 @@
     Footer
   ============================-->
   <footer id="footer">
-    
+
 
     <div class="container">
       <div class="copyright">
@@ -120,21 +176,21 @@
       </div>
       <div class="credits">
 
-  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+        <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 
-  <!-- JavaScript Libraries -->
-  <script src="../lib/jquery/jquery.min.js"></script>
-  <script src="../lib/jquery/jquery-migrate.min.js"></script>
-  <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../lib/easing/easing.min.js"></script>
-  <script src="../lib/superfish/hoverIntent.js"></script>
-  <script src="../lib/superfish/superfish.min.js"></script>
-  <script src="../lib/wow/wow.min.js"></script>
-  <script src="../lib/venobox/venobox.min.js"></script>
-  <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+        <!-- JavaScript Libraries -->
+        <script src="../lib/jquery/jquery.min.js"></script>
+        <script src="../lib/jquery/jquery-migrate.min.js"></script>
+        <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="../lib/easing/easing.min.js"></script>
+        <script src="../lib/superfish/hoverIntent.js"></script>
+        <script src="../lib/superfish/superfish.min.js"></script>
+        <script src="../lib/wow/wow.min.js"></script>
+        <script src="../lib/venobox/venobox.min.js"></script>
+        <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
 
-  <!-- Template Main Javascript File -->
-  <script src="../js/main.js"></script>
+        <!-- Template Main Javascript File -->
+        <script src="../js/main.js"></script>
 </body>
 
 </html>

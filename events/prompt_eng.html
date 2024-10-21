@@ -8,24 +8,25 @@
   <meta content="" name="keywords">
   <meta content="" name="description">
 
-   <!-- Favicons -->
-   <link href="../img/favicon.png" rel="icon">
-   <link href="../img/apple-touch-icon.png" rel="apple-touch-icon">
- 
-   <!-- Google Fonts -->
-   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
- 
-   <!-- Bootstrap CSS File -->
-   <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
- 
-   <!-- Libraries CSS Files -->
-   <link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-   <link href="../lib/animate/animate.min.css" rel="stylesheet">
-   <link href="../lib/venobox/venobox.css" rel="stylesheet">
-   <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
- 
-   <!-- Main Stylesheet File -->
-   <link href="../css/style.css" rel="stylesheet">
+  <!-- Favicons -->
+  <link href="../img/favicon.png" rel="icon">
+  <link href="../img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../lib/animate/animate.min.css" rel="stylesheet">
+  <link href="../lib/venobox/venobox.css" rel="stylesheet">
+  <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="../css/style.css" rel="stylesheet">
 
 </head>
 
@@ -50,7 +51,7 @@
           <li><a href="../index.html#speakers">Events</a></li>
           <li><a href="../index.html#schedule">Schedule</a></li>
           <li><a href="../index.html#venue">Venue</a></li>
-      
+
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
@@ -84,28 +85,87 @@
                 <a href=""><i class="fa fa-linkedin"></i></a>
               </div> -->
               <h3>Guidelines</h3>
-    <ul>
-        <li><strong>1</strong> Duration: 30 minutes.</li>
-        <li><strong>2</strong> Task: Create effective prompts that maximize desired responses within specific constraints.</li>
-        <li><strong>3</strong> Tools: Use only approved software for prompt creation. External assistance like AI-based auto-completion or additional tools is prohibited.</li>
-        <li><strong>4</strong> Evaluation Criteria:</li>
-        <ul>
-            <li><strong>– Effectiveness:</strong> How well does the prompt elicit the intended response?</li>
-            <li><strong>– Creativity:</strong> How unique and innovative is the prompt?</li>
-            <li><strong>– Clarity:</strong> The prompt should be concise and easy to understand.</li>
-        </ul>
-        <li><strong>5</strong> Participants: A maximum of 25 participants can compete.</li>
-        <li><strong>6</strong> Scoring: Based on prompt performance, creativity, and adherence to the task.</li>
-        <li><strong>Note:</strong> Each participant will be assigned a computer.</li>
-    </ul><br>
-            <div>
-              <a href="https://forms.gle/45e3rtRE3x7DUj4V8"><button type="button" class="btn btn-primary btn-lg">Register Now</button></a>
-              
+              <ul>
+                <li><strong>1</strong> Duration: 30 minutes.</li>
+                <li><strong>2</strong> Task: Create effective prompts that maximize desired responses within specific
+                  constraints.</li>
+                <li><strong>3</strong> Tools: Use only approved software for prompt creation. External assistance like
+                  AI-based auto-completion or additional tools is prohibited.</li>
+                <li><strong>4</strong> Evaluation Criteria:</li>
+                <ul>
+                  <li><strong>– Effectiveness:</strong> How well does the prompt elicit the intended response?</li>
+                  <li><strong>– Creativity:</strong> How unique and innovative is the prompt?</li>
+                  <li><strong>– Clarity:</strong> The prompt should be concise and easy to understand.</li>
+                </ul>
+                <li><strong>5</strong> Participants: A maximum of 25 participants can compete.</li>
+                <li><strong>6</strong> Scoring: Based on prompt performance, creativity, and adherence to the task.</li>
+                <li><strong>Note:</strong> Each participant will be assigned a computer.</li>
+              </ul><br>
+              <div>
+                <a href="https://forms.gle/45e3rtRE3x7DUj4V8"><button type="button"
+                    class="btn btn-primary btn-lg">Register Now</button></a>
+                <button id="openModalBtn" class="btn btn-primary btn-lg">Guidelines</button>
+
+                <!-- The Modal -->
+                <div id="promptModal"
+                  style="display:none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);">
+                  <div
+                    style="background-color: #fff; margin: 15% auto; padding: 20px; border: 1px solid #888; width: 80%; max-width: 500px;">
+                    <span id="closeModalBtn"
+                      style="color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer;">&times;</span>
+                    <h2>Competition Guidelines</h2>
+                    <ul>
+                      <li>Duration: 30 minutes</li>
+                      <li>Task: Create effective prompts that maximize desired responses within specific constraints.
+                      </li>
+                      <li>Tools: Use only approved software for prompt creation. External assistance like AI-based
+                        auto-completion or additional tools is prohibited.</li>
+                      <li>Evaluation Criteria:
+                        <ul>
+                          <li>Effectiveness: How well does the prompt elicit the intended response?</li>
+                          <li>Creativity: How unique and innovative is the prompt?</li>
+                          <li>Clarity: The prompt should be concise and easy to understand.</li>
+                        </ul>
+                      </li>
+                      <li>Participants: A maximum of 25 participants can compete.</li>
+                      <li>Scoring: Based on prompt performance, creativity, and adherence to the task.</li>
+                    </ul>
+                    <p>Note: Each participant will be assigned a computer.</p>
+                  </div>
+                </div>
+
+                <script>
+                  // Get modal element
+                  var modal = document.getElementById("promptModal");
+
+                  // Get open modal button
+                  var openModalBtn = document.getElementById("openModalBtn");
+
+                  // Get close button
+                  var closeModalBtn = document.getElementById("closeModalBtn");
+
+                  // Open modal event
+                  openModalBtn.onclick = function () {
+                    modal.style.display = "block";
+                  }
+
+                  // Close modal event
+                  closeModalBtn.onclick = function () {
+                    modal.style.display = "none";
+                  }
+
+                  // Close modal if clicked outside
+                  window.onclick = function (event) {
+                    if (event.target == modal) {
+                      modal.style.display = "none";
+                    }
+                  }
+                </script>
+              </div>
             </div>
+
           </div>
-          
         </div>
-      </div>
 
     </section>
 
@@ -116,7 +176,7 @@
     Footer
   ============================-->
   <footer id="footer">
-    
+
 
     <div class="container">
       <div class="copyright">
@@ -124,22 +184,22 @@
       </div>
       <div class="credits">
 
-  <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+        <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
 
- <!-- JavaScript Libraries -->
- <script src="../lib/jquery/jquery.min.js"></script>
- <script src="../lib/jquery/jquery-migrate.min.js"></script>
- <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
- <script src="../lib/easing/easing.min.js"></script>
- <script src="../lib/superfish/hoverIntent.js"></script>
- <script src="../lib/superfish/superfish.min.js"></script>
- <script src="../lib/wow/wow.min.js"></script>
- <script src="../lib/venobox/venobox.min.js"></script>
- <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+        <!-- JavaScript Libraries -->
+        <script src="../lib/jquery/jquery.min.js"></script>
+        <script src="../lib/jquery/jquery-migrate.min.js"></script>
+        <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="../lib/easing/easing.min.js"></script>
+        <script src="../lib/superfish/hoverIntent.js"></script>
+        <script src="../lib/superfish/superfish.min.js"></script>
+        <script src="../lib/wow/wow.min.js"></script>
+        <script src="../lib/venobox/venobox.min.js"></script>
+        <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
 
- <!-- Template Main Javascript File -->
- <script src="../js/main.js"></script>
- 
+        <!-- Template Main Javascript File -->
+        <script src="../js/main.js"></script>
+
 </body>
 
 </html>
