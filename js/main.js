@@ -159,3 +159,5 @@ jQuery(document).ready(function ($) {
   updateNavLinkFocus();
 
 });
+
+//modal

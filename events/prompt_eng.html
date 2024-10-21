@@ -108,32 +108,31 @@
               <button id="openModalBtn" class="btn btn-primary btn-lg">Guidelines</button>
             </div>
              <!-- The Modal -->
-             <div id="promptModal"
-             style="display:none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);">
-             <div
-               style="background-color: #fff; margin: 15% auto; padding: 20px; border: 1px solid #888; width: 80%; max-width: 500px;">
-               <span id="closeModalBtn"
-                 style="color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer;">&times;</span>
-               <h2>Competition Guidelines</h2>
-               <ul>
-                 <li>Duration: 30 minutes</li>
-                 <li>Task: Create effective prompts that maximize desired responses within specific constraints.
-                 </li>
-                 <li>Tools: Use only approved software for prompt creation. External assistance like AI-based
-                   auto-completion or additional tools is prohibited.</li>
-                 <li>Evaluation Criteria:
-                   <ul>
-                     <li>Effectiveness: How well does the prompt elicit the intended response?</li>
-                     <li>Creativity: How unique and innovative is the prompt?</li>
-                     <li>Clarity: The prompt should be concise and easy to understand.</li>
-                   </ul>
-                 </li>
-                 <li>Participants: A maximum of 25 participants can compete.</li>
-                 <li>Scoring: Based on prompt performance, creativity, and adherence to the task.</li>
-               </ul>
-               <p>Note: Each participant will be assigned a computer.</p>
-             </div>
-           </div>
+<div id="promptModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModalBtn" class="close-btn">&times;</span>
+    <h2>Competition Guidelines</h2>
+    <div class="guidelines">
+      <p>The following guidelines apply to the competition:</p>
+      <ul>
+        <li><strong>Duration:</strong> 30 minutes</li>
+        <li><strong>Task:</strong> Create effective prompts that maximize desired responses within specific constraints.</li>
+        <li><strong>Tools:</strong> Use only approved software for prompt creation. External assistance like AI-based auto-completion or additional tools is prohibited.</li>
+        <li><strong>Evaluation Criteria:</strong>
+          <ul>
+            <li>Effectiveness: How well does the prompt elicit the intended response?</li>
+            <li>Creativity: How unique and innovative is the prompt?</li>
+            <li>Clarity: The prompt should be concise and easy to understand.</li>
+          </ul>
+        </li>
+        <li><strong>Participants:</strong> A maximum of 25 participants can compete.</li>
+        <li><strong>Scoring:</strong> Based on prompt performance, creativity, and adherence to the task.</li>
+      </ul>
+      <p><strong>Note:</strong> Each participant will be assigned a computer.</p>
+    </div>
+  </div>
+</div>
+
 
            <script>
              // Get modal element

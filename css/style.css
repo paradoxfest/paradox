@@ -535,6 +535,17 @@ body.mobile-nav-active #mobile-nav-toggle {
     min-width: unset;
     min-height: 100%; /* Prioritize height on mobile to avoid cropping */
   }
+
+  #logo{
+  font-size: 36px;
+  margin: 0;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
 }
 
 #intro:before {
@@ -1289,3 +1300,5 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-top: 10px;
   }
 }
+
+/*Modal*/
