@@ -12,7 +12,7 @@
 body {
   background: #fff;
   color: #2f3138;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Arial","Open Sans", sans-serif;
 }
 
 a {
@@ -468,15 +468,35 @@ body.mobile-nav-active #mobile-nav-toggle {
 #intro {
   width: 100%;
   height: 100vh;
-  background: url(../img/intro-bg.jpg) top center;
-  background-size: cover;
   overflow: hidden;
   position: relative;
 }
 
+/* Video Styling: Ensure full responsiveness */
+#bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;  
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+  object-fit: cover;  /* Ensures the video covers the area without distortion */
+  background: rgba(26, 26, 28, 0.9);
+}
+
+/* Ensure the video section behaves well on mobile */
+@media (max-width: 768px) {
+  #bg-video {
+    min-width: unset;
+    min-height: 100%; /* Prioritize height on mobile to avoid cropping */
+  }
+}
+
 #intro:before {
   content: "";
-  background: rgba(6, 12, 34, 0.5);
+  background: rgba(26, 26, 28, 0.9);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -510,8 +530,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 #intro h1 {
   color: #fff;
   font-family: "Raleway", sans-serif;
-  font-size: 56px;
-  font-weight: 600;
+  font-size: 80px;
+  font-weight: 700;
 }
 
 #intro h1 span {
@@ -521,7 +541,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #intro p {
   color: #ebebeb;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 40px;
 }
 
 #intro .play-btn {
@@ -601,7 +621,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #intro .about-btn {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 20px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 32px;
@@ -612,7 +632,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  border: 2px solid #f82249;
+  border: 3px solid #f82249;
 }
 
 #intro .about-btn:hover {
