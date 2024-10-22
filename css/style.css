@@ -1,6 +1,11 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+ @import url('https://fonts.cdnfonts.com/css/akira-expanded');
+
+                
+
 .modal {
   display: none;
   position: fixed;
@@ -43,8 +48,7 @@ button {
 body {
   background: #fff;
   color: #2f3138;
-  font-family: "Monospace","Open Sans", sans-serif;
-
+  font-family: "Monospace","Open Sans", sans-serif;                                               
 }
 li{
   margin: 10px 10px;
@@ -583,7 +587,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #intro h1 {
   color: #fff;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Akira Expanded', sans-serif;                                        
   font-size: 80px;
   font-weight: 700;
 }
