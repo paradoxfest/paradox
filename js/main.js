@@ -192,7 +192,6 @@ jQuery(document).ready(function ($) {
 
   // Automatically start the effect when the page loads
   window.onload = () => {
-    console.log("fiahfiah");
     const h1Element = document.getElementById("font");
     console.log(h1Element)
     //scrambleText(h1Element);
