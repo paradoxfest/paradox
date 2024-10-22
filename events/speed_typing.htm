@@ -114,28 +114,22 @@
               <button id="openModalBtn" class="btn btn-primary btn-lg">Guidelines</button>
 
               <!-- The Modal -->
-              <div id="competitionModal"
-                style="display:none; position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);">
-                <div
-                  style="background-color: #fff; margin: 15% auto; padding: 20px; border: 1px solid #888; width: 80%; max-width: 500px;">
-                  <span id="closeModalBtn"
-                    style="color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer;">&times;</span>
-                  <h2>Competition Guidelines</h2>
-                  <ul>
-                    <li><strong>Duration:</strong> 30 minutes</li>
-                    <li><strong>Equipment:</strong> Each participant will be assigned a computer or laptop with the
-                      typing software pre-installed.</li>
-                    <li><strong>Content:</strong> A hardcopy of the content will be provided. Participants must type
-                      exactly as it appears, including formatting, capitalization, punctuation, and spacing.</li>
-                    <li><strong>Prohibited Tools:</strong> The use of external tools, including autocorrect,
-                      spell-checker, and other software is strictly prohibited during the competition.</li>
-                    <li><strong>Scoring:</strong> Score will be based on typing speed (WPM) and accuracy. Results will
-                      be announced after evaluating these metrics.</li>
-                    <li><strong>Participants:</strong> A maximum of 25 participants can compete in this event.</li>
-                    <li><strong>Judges' Decision:</strong> The judges' decision will be final.</li>
-                  </ul>
+              <div id="competitionModal" class="modal">
+                <div class="modal-content">
+                    <span id="closeModalBtn" class="close-btn">&times;</span>
+                    <h2>Competition Guidelines</h2>
+                    <ul>
+                        <li><strong>Duration:</strong> 30 minutes</li>
+                        <li><strong>Equipment:</strong> Each participant will be assigned a computer or laptop with the typing software pre-installed.</li>
+                        <li><strong>Content:</strong> A hardcopy of the content will be provided. Participants must type exactly as it appears, including formatting, capitalization, punctuation, and spacing.</li>
+                        <li><strong>Prohibited Tools:</strong> The use of external tools, including autocorrect, spell-checker, and other software is strictly prohibited during the competition.</li>
+                        <li><strong>Scoring:</strong> Score will be based on typing speed (WPM) and accuracy. Results will be announced after evaluating these metrics.</li>
+                        <li><strong>Participants:</strong> A maximum of 25 participants can compete in this event.</li>
+                        <li><strong>Judges' Decision:</strong> The judges' decision will be final.</li>
+                    </ul>
                 </div>
-              </div>
+            </div>
+              
 
               <script>
                 // Get modal element
