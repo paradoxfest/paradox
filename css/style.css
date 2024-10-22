@@ -2,12 +2,12 @@
 # General
 --------------------------------------------------------------*/
 
- @import url('https://fonts.cdnfonts.com/css/akira-expanded');
- @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
- 
+@import url('https://fonts.cdnfonts.com/css/akira-expanded');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-                
+
+
 
 .modal {
   display: none;
@@ -48,27 +48,35 @@ button {
   font-size: 16px;
   cursor: pointer;
 }
+
 body {
   background: #fff;
   color: #2f3138;
-  font-family: "Monospace","Open Sans", sans-serif;                                               
+  font-family: "Monospace", "Open Sans", sans-serif;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+
 }
-li{
+
+li {
   margin: 10px 10px;
-  padding:10;
+  padding: 10;
 }
+
 ul {
   list-style-type: none;
   padding: 0;
   max-width: 600px;
   margin: auto;
-  
+
 }
 
 a {
   color: #f82249;
   transition: 0.5s;
 }
+
 a:hover,
 a:active,
 a:focus {
@@ -264,12 +272,12 @@ h6 {
   white-space: nowrap;
 }
 
-.nav-menu > li {
+.nav-menu>li {
   float: left;
 }
 
-.nav-menu li:hover > ul,
-.nav-menu li.sfHover > ul {
+.nav-menu li:hover>ul,
+.nav-menu li.sfHover>ul {
   display: block;
 }
 
@@ -294,7 +302,7 @@ h6 {
   right: 15px;
   font-family: FontAwesome;
   font-style: normal;
-  font-weight: normal;  
+  font-weight: normal;
 }
 
 .sf-arrows ul .sf-with-ul:after {
@@ -326,11 +334,11 @@ h6 {
   color: #fff;
 }
 
-.nav-menu > li {
+.nav-menu>li {
   margin-left: 8px;
 }
 
-.nav-menu > li > a:before {
+.nav-menu>li>a:before {
   content: "";
   position: absolute;
   width: 0;
@@ -343,8 +351,8 @@ h6 {
 }
 
 .nav-menu a:hover:before,
-.nav-menu li:hover > a:before,
-.nav-menu .menu-active > a:before {
+.nav-menu li:hover>a:before,
+.nav-menu .menu-active>a:before {
   visibility: visible;
   width: 100%;
 }
@@ -394,7 +402,7 @@ h6 {
   border-radius: 3px;
 }
 
-.nav-menu ul li:hover > a {
+.nav-menu ul li:hover>a {
   background: #f82249;
   color: #fff;
 }
@@ -527,12 +535,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100%;  
+  width: 100%;
   height: auto;
   min-width: 100%;
   min-height: 100%;
   transform: translate(-50%, -50%);
-  object-fit: cover;  /* Ensures the video covers the area without distortion */
+  object-fit: cover;
+  /* Ensures the video covers the area without distortion */
   background: rgba(26, 26, 28, 0.9);
 }
 
@@ -540,19 +549,20 @@ body.mobile-nav-active #mobile-nav-toggle {
 @media (max-width: 768px) {
   #bg-video {
     min-width: unset;
-    min-height: 100%; /* Prioritize height on mobile to avoid cropping */
+    min-height: 100%;
+    /* Prioritize height on mobile to avoid cropping */
   }
 
-  #logo{
-  font-size: 36px;
-  margin: 0;
-  margin-top: 0px;
-  margin-bottom: 10px;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-}
+  #logo {
+    font-size: 36px;
+    margin: 0;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
 }
 
 #intro:before {
@@ -587,6 +597,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
   padding: 0 15px;
 }
+
 h1 {
   font-family: 'Space Mono', monospace;
   font-size: clamp(3rem, 10vw, 10rem);
@@ -595,14 +606,14 @@ h1 {
   border-radius: clamp(0.4rem, 0.75vw, 1rem);
 }
 
-h1:hover {
+/* h1:hover {
   background-color: white;
   color: black;
-}
+} */
 
 /* -- YouTube Link Styles -- */
 
-body.menu-toggled > .meta-link > span {
+body.menu-toggled>.meta-link>span {
   color: rgb(30, 30, 30);
 }
 
@@ -610,11 +621,11 @@ body.menu-toggled > .meta-link > span {
   bottom: 60px;
 }
 
-#source-link > i {
+#source-link>i {
   color: rgb(94, 106, 210);
 }
 
-#yt-link > i {
+#yt-link>i {
   color: rgb(239, 83, 80);
 }
 
@@ -626,7 +637,7 @@ body.menu-toggled > .meta-link > span {
   border-radius: 6px;
   bottom: 10px;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
-  cursor: pointer;  
+  cursor: pointer;
   display: inline-flex;
   gap: 5px;
   left: 10px;
@@ -642,18 +653,21 @@ body.menu-toggled > .meta-link > span {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.meta-link > i, .meta-link > span {
+.meta-link>i,
+.meta-link>span {
   height: 20px;
   line-height: 20px;
 }
-.meta-link > span {
+
+.meta-link>span {
   color: white;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
 }
+
 #intro h1 {
   color: #fff;
-  font-family: 'Akira Expanded', sans-serif;                                        
+  font-family: 'Akira Expanded', sans-serif;
   font-size: 80px;
   font-weight: 700;
 }
@@ -1263,6 +1277,7 @@ body.menu-toggled > .meta-link > span {
 }
 
 @media (min-width: 768px) {
+
   #contact .contact-address,
   #contact .contact-phone,
   #contact .contact-email {
