@@ -3,6 +3,9 @@
 --------------------------------------------------------------*/
 
  @import url('https://fonts.cdnfonts.com/css/akira-expanded');
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+ 
+
 
                 
 
@@ -600,6 +603,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #ebebeb;
   font-weight: 700;
   font-size: 40px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: SemiBold 600;
+  font-style: normal;
+
 }
 
 #intro .play-btn {
