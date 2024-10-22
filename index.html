@@ -64,7 +64,8 @@
     </video>
     <div class="intro-container wow fadeIn">
       
-  <h1 data-value="PARADOX'24" id="font"><span>PARADOX</span>'24</h1>
+      <h1 data-value="PARADOX" id="font"><span>PARADOX</span>'24</h1>
+
       <p class="mb-4 pb-0">25 OCTOBER</p>
       <a href="https://youtu.be/5YG2WpPH7tk?si=DCkBN1cIi3DYYh5K" class="venobox play-btn mb-4" data-vbtype="video"
         data-autoplay="true"></a>
@@ -549,6 +550,46 @@
   </footer><!-- #footer -->
 
   <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+  <!-- header letter -->
+   <script>
+    let interval = null;
+
+function scrambleText(event) {
+  let iteration = 0;
+  const originalText = event.dataset.value;
+  event.innerHTML = `<span>${originalText}</span>`; // Set initial text wrapped in span
+
+  clearInterval(interval);
+  setTimeout(() => {
+    interval = setInterval(() => {
+      event.innerHTML = `<span>` + originalText
+        .split("")
+        .map((letter, index) => {
+          if (index < iteration) {
+            return originalText[index]; // Return the original letter
+          }
+          return String.fromCharCode(Math.floor(Math.random() * 26) + 65); // Random letters A-Z
+        })
+        .join("") + `</span>`; // Keep the span wrapping
+
+      if (iteration >= originalText.length) {
+        clearInterval(interval);
+        // Ensure final output is still wrapped in span
+        event.innerHTML = `<h1 data-value="PARADOX" id="font" ><span>${originalText}</span>'24</h1>`;
+      }
+
+      iteration += 1 / 3;
+    }, 30);
+  }, 100);
+}
+
+// Automatically start the effect when the page loads
+window.onload = () => {
+  const h1Element = document.getElementById("font");
+  scrambleText(h1Element);
+};
+   </script>
 
   <!-- JavaScript Libraries -->
   <script src="lib/jquery/jquery.min.js"></script>

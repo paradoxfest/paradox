@@ -159,43 +159,5 @@ jQuery(document).ready(function ($) {
   // Call the function on page load to set the initial active link
   updateNavLinkFocus();
   const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  let interval = null;
-
-  function scrambleText(event) {
-    let iteration = 0;
-    event.innerText = "PARADOX'24"
-    console.log("scramble",event.innerText)
-
-    clearInterval(interval);
-    setTimeout(()=>{
-      interval = setInterval(() => {
-        event.innerText = event.innerText
-          .split("")
-          .map((letter, index) => {
-            if (index < iteration) {
-              return event.dataset.value[index];
-            }
-  
-            return letters[Math.floor(Math.random() * 26)];
-          })
-          .join("");
-  
-        if (iteration >= event.dataset.value.length) {
-          clearInterval(interval);
-        }
-  
-        iteration += 1 / 3;
-      }, 30);
-    },100)
-    
-  }
-
-  // Automatically start the effect when the page loads
-  window.onload = () => {
-    const h1Element = document.getElementById("font");
-    console.log(h1Element)
-    //scrambleText(h1Element);
-  };
-
 });
 
