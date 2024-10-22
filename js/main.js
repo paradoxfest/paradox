@@ -195,7 +195,7 @@ jQuery(document).ready(function ($) {
     console.log("fiahfiah");
     const h1Element = document.getElementById("font");
     console.log(h1Element)
-    scrambleText(h1Element);
+    //scrambleText(h1Element);
   };
 
 });
